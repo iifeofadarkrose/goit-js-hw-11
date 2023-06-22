@@ -1,0 +1,39 @@
+import Notiflix from 'notiflix';
+import "notiflix/dist/notiflix-3.2.6.min.css";
+
+
+const axios = require('axios').default;
+
+
+export async function fetchGetImage(searchWord) {
+    const apiKey = "37695850-4d249e88305a79ea73cd9b048";
+    try {
+        const { data } = await axios.get('https://pixabay.com/api/', {
+            params: {
+                key: apiKey,
+                q: searchWord,
+                image_type: 'photo',
+                orientation: 'horizontal',
+                safesearch: 'true',
+                per_page: 40,
+                page: 1,
+            },
+
+        });
+
+        return data;
+
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
+
+
+
+
+
+
+
+
