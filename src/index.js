@@ -1,9 +1,11 @@
 import axios from 'axios';
-import Notiflix from 'notiflix';
+import Notiflix from 'notiflix';м
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
+
 const pixabayKey = '37695850-4d249e88305a79ea73cd9b048';
+
 
 const formEl = document.querySelector('form');
 const inputEl = document.querySelector('input'); 
