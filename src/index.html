@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Search images</title>
-  <link rel="stylesheet" href="./sass/index.css" />
-  <script type="module" src="./index.js"></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 11</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <form class="search-form" id="search-form">
-    <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-    <button type="submit">Search</button>
-  </form>
-
-  <div class="gallery">
-
+  <div class="form-container">
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button class="btn-submit" type="submit">Search</button>
+    </form>
   </div>
-
-  <button type="button" class="load-more">Load more</button>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <div class="gallery">
+    
+  </div>
+  <script src="index.js" type="module"></script>
 </body>
-
-</html>
